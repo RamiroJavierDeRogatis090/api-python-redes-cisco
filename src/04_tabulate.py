@@ -7,7 +7,7 @@ baseUri = "http://localhost:58000/api/v1" #URL de PT
 
 # Llamada al API por el ticket
 headers = {"Content-Type": "application/json"} #Headers
-data = json.dumps({"username": "cisco", "password": "cisco123!"}) #Credenciales
+data = json.dumps({"username": "admin", "password": "Admin1234"}) #Credenciales
 resp = requests.post(baseUri+"/ticket", data=data, headers=headers) #URL específica
 
 print("Status de Solicitud:")
@@ -21,7 +21,7 @@ print(ticket)
 
 
 # Llamada al API para recibir los dispositivos de red
-headers = {"X-Auth-Token": ticket}
+headers = {"X-Auth-Token": "NC-8-4ef04827cb8347a1832f-nbi"}
 resp = requests.get(baseUri+"/network-device", headers=headers) #URL específica
 
 # print (resp.status_code)
@@ -38,7 +38,7 @@ for item in result["response"]:
 print(tabulate(host_list,headers=["Hostname","Serial Number","Software Version"],tablefmt='rst')) #Tabla ordenada 
 
 # Llamada al API para recibir los host
-headers = {"X-Auth-Token": ticket }
+headers = {"X-Auth-Token": "NC-8-4ef04827cb8347a1832f-nbi" }
 resp = requests.get(baseUri+"/host", headers=headers) #URL específica
 
 # print (resp.status_code)

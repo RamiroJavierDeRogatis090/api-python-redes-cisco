@@ -1,0 +1,26 @@
+Tipo,Nombre,IP,Estado / Ping,Conectado a / Modelo
+Dispositivo,SW-SedeCentral,192.168.50.1,Managed,3650
+Dispositivo,Multilayer-Suc4,192.168.41.1,Managed,3650
+Dispositivo,R-Suc1,192.168.199.1,Managed,ISR4300
+Dispositivo,Sw-Suc2,192.168.209.1,Managed,3650
+Dispositivo,R-Suc3,192.168.31.1,Managed,ISR4300
+Dispositivo,SW-Suc1,192.168.199.2,Managed,2960
+Dispositivo,SW-Suc2,192.168.209.2,Managed,2960
+Dispositivo,SW-Suc3,192.168.219.2,Managed,2960
+Dispositivo,R-Borde,203.0.113.2,Managed,ISR4300
+Dispositivo,SW-Suc4,192.168.229.2,Managed,2960
+Dispositivo,SW-Central,192.168.99.2,Managed,2960
+Dispositivo,,203.0.113.1,Wrong credential,
+Host (Server),DNS,192.168.50.10,SUCCESS,SW-Central (FastEthernet0/3)
+Host (Server),NTP,192.168.50.11,SUCCESS,SW-Central (FastEthernet0/4)
+Host (Server),FTP,192.168.50.12,SUCCESS,SW-Central (FastEthernet0/5)
+Host (Pc),PC-ADMIN,192.168.50.20,SUCCESS,SW-Central (FastEthernet0/6)
+Host (Server),empresa,198.51.100.10,SUCCESS,ISP (GigabitEthernet0/0/0)
+Host (Pc),PC3,192.168.20.11,SUCCESS,SW-Suc2 (FastEthernet0/2)
+Host (Pc),PC2,192.168.11.11,SUCCESS,SW-Suc1 (FastEthernet0/3)
+Host (Pc),PC3,192.168.20.11,SUCCESS,SW-Suc2 (FastEthernet0/2)
+Host (Pc),PC5,192.168.30.10,SUCCESS,SW-Suc3 (FastEthernet0/2)
+Host (Pc),PC4,192.168.31.10,SUCCESS,SW-Suc3 (FastEthernet0/3)
+Host (Pc),PC7,192.168.41.10,SUCCESS,SW-Suc4 (FastEthernet0/3)
+Host (Pc),PC6,192.168.40.10,SUCCESS,SW-Suc4 (FastEthernet0/2)
+Host (Pc),PC1,192.168.10.11,SUCCESS,SW-Suc1 (FastEthernet0/2)

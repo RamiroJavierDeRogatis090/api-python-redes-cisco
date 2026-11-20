@@ -7,8 +7,8 @@ headers = {
 }
 
 body_json = {
-    "username": "cisco",
-    "password": "cisco123!"
+    "username": "admin",
+    "password": "Admin1234"
 }
 
 resp = requests.post(api_url, json.dumps(body_json), headers=headers)
@@ -19,3 +19,4 @@ print (response_json)
 serviceTicket = response_json["response"]["serviceTicket"]
 
 print("The service ticket number is: ", serviceTicket) 
+
